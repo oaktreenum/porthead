@@ -72,13 +72,13 @@ function draw() {
   
   textFont('Silkscreen');
   textSize(b);
-  text("Engineer", innerWidth/2-4.6*a/3, innerHeight/2-b);
+  text("ENGINEER", innerWidth/2-4.6*a/3, innerHeight/2-b);
   textFont('Reggae One');
   textSize(b);
   text("Designer", innerWidth/2-2.3*a/3, innerHeight/2);
   textFont('Rock Salt');
   textSize(b);
-  text("Artist", innerWidth/2-a/13, innerHeight/2+b);
+  text("artist", innerWidth/2-a/13, innerHeight/2+b);
  
   
   textFont('Space Mono');
