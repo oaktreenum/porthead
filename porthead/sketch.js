@@ -46,8 +46,8 @@ function draw() {
   d=145;
   e=150;
   
-  if(width<800){
-    a=a/2;
+   if(innerWidth<800){
+    a=a/2-22;
     b=b/2;
     c=c/2;
   } else{
@@ -56,7 +56,7 @@ function draw() {
       c=30;
   }
   
-  if(width<500){
+  if(innerWidth<500){
     d=d/2;
     e=c/2;
     image(dimg,innerWidth-d,innerHeight/7);
