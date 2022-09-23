@@ -1,7 +1,9 @@
 function preload() {
   // preload() runs once
 bkg = loadImage('assets/bkg.jpg');
-
+  cimg = loadImage('assets/d.svg');
+  dimg = loadImage('assets/c.svg');
+  eimg = loadImage('assets/e.png');
 }
 
 function setup() {
@@ -14,12 +16,12 @@ function setup() {
   hRatio = height/bkg.height;
   rat  = max(wRatio,hRatio);
   bkg.resize(bkg.width*rat,bkg.height*rat);
-
   
- //for(let i = 0; i < 1000000000; i++){}
+  eimg.resize(130,130);
 }
 
 function draw() {
+  clear();
   background(50);
 
   image(bkg,0,0);
@@ -48,13 +50,13 @@ function draw() {
   
   textFont('Silkscreen');
   textSize(b);
-  text("Engineer", innerWidth/2-a, innerHeight/2-b);
+  text("Engineer", innerWidth/2-4.6*a/3, innerHeight/2-b);
   textFont('Reggae One');
   textSize(b);
-  text("Designer", innerWidth/2-c, innerHeight/2);
+  text("Designer", innerWidth/2-2.3*a/3, innerHeight/2);
   textFont('Rock Salt');
   textSize(b);
-  text("Artist", innerWidth/2+2.3*a/3, innerHeight/2+b);
+  text("Artist", innerWidth/2-a/13, innerHeight/2+b);
  
   
   textFont('Space Mono');
@@ -66,5 +68,10 @@ function draw() {
   textSize(13);
   text("Quantum Crypto", 3*innerWidth/4-52, 26);
  
+  image(dimg,innerWidth-145,innerHeight/7);
+  image(eimg,innerWidth-130,3*innerHeight/7);
+  image(cimg,innerWidth-150,5*innerHeight/7);
+  
+  
   
 }
