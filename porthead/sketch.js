@@ -7,7 +7,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(innerWidth, innerHeight-60);
+  createCanvas(innerWidth, innerHeight);
   
   
   resrat = bkg.width/bkg.height;
