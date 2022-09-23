@@ -37,7 +37,7 @@ function draw() {
   a=180;
   b=60;
   c=30;
-  if(innerWidth<600){
+  if(innerWidth<740){
     a=a/2;
     b=b/2;
     c=c/2;
