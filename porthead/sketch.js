@@ -3,11 +3,11 @@ function preload() {
 bkg = loadImage('assets/bkg.jpg');
   cimg = loadImage('assets/d.svg');
   dimg = loadImage('assets/c.svg');
-  eimg = loadImage('assets/e.png');
+  eimg = loadImage('assets/ef.svg');
 }
 
 function setup() {
-  createCanvas(innerWidth, innerHeight);
+  createCanvas(innerWidth, innerHeight-60);
   
   
   resrat = bkg.width/bkg.height;
@@ -16,8 +16,6 @@ function setup() {
   hRatio = height/bkg.height;
   rat  = max(wRatio,hRatio);
   bkg.resize(bkg.width*rat,bkg.height*rat);
-  
-  eimg.resize(130,130);
 }
 
 function draw() {
@@ -26,8 +24,8 @@ function draw() {
 
   image(bkg,0,0);
   
-  noStroke()
-  rect(0,0,60,innerHeight)
+  noStroke();
+  rect(0,0,60,innerHeight);
   push();
   translate(00,3*innerHeight/4);
   rotate(-PI/2);
@@ -69,7 +67,7 @@ function draw() {
   text("Quantum Crypto", 3*innerWidth/4-52, 26);
  
   image(dimg,innerWidth-145,innerHeight/7);
-  image(eimg,innerWidth-130,3*innerHeight/7);
+  image(eimg,innerWidth-145,3*innerHeight/7);
   image(cimg,innerWidth-150,5*innerHeight/7);
   
   
