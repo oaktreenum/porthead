@@ -65,9 +65,9 @@ function draw() {
   }else{
     d=145;
     e=150;
-    image(dimg,innerWidth-d,innerHeight/7);
-    image(eimg,innerWidth-d,3*innerHeight/7);
-    image(cimg,innerWidth-150,5*innerHeight/7);
+    image(dimg,innerWidth-d,innerHeight/7-22);
+    image(eimg,innerWidth-d,3*innerHeight/7-22);
+    image(cimg,innerWidth-150,5*innerHeight/7-22);
   }
   
   textFont('Silkscreen');
