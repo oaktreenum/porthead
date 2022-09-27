@@ -1,5 +1,5 @@
 function preload() {
-  bkg = loadImage('assets/bkg.jpg');
+  bkg = loadImage('assets/bkgweb final.png');
 
   cimg = loadImage('assets/d.svg');
   dimg = loadImage('assets/c.svg');
